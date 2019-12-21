@@ -1,0 +1,10 @@
+t = 0:pi/180:4*pi;
+x = 16*sin(t).^3;
+y = 13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t);
+plot(x-3, y, '-r', x+3, y, '-b');
+xlabel('x');    ylabel("y");
+axis([-20,20,-20,15]);
+xlim([-30,30]);
+title("Two Hearts");
+legend("U","I");
+grid on;
